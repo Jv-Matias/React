@@ -1,0 +1,10 @@
+#demo {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 40px auto;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0 10px 40px -12px black;
+    align-items: center;
+}

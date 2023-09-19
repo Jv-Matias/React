@@ -1,0 +1,250 @@
+/*
+    TAG (button, body, input)
+
+    Classe (.titulo .grupo)
+
+    Id (#btn-entrar)
+
+    Seletor (Tudo junto e misturado)
+
+*/
+
+
+
+/* .grupo {
+    margin-top: 10px;
+}
+
+.caixa-login {
+    width: 250px;
+    height: auto;
+    border: 2px solid #ddd;
+    margin: auto;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.titulo-login{
+    text-align: center;
+    color: var(--cor-primaria);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input, 
+#btn-entrar {
+    padding: 8px;
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid #ddd;
+    outline: none;
+}
+
+#btn-entrar {
+    margin-top: 10px;
+    background-color: var(--cor-primaria);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#btn-entrar:hover {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+}
+
+
+.esqueci-minha-senha {
+    text-align: right;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+.esqueci-minha-senha a {
+    color:var(--cor-primaria);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+ */
+
+ *{
+    margin: 0;
+
+}
+
+body * {
+    box-sizing: border-box;
+    
+}
+
+.tela-inicial{
+    width: 100vw;
+    height: 100vh;
+    background: #161623;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda > h1{
+    font-size: 3vw;
+    color: rgb(219, 205, 12);
+    
+}
+
+.img-esquerda{
+width: 25vw;
+
+}
+
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #19191c;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px black;
+}
+
+.box-login > h1 {
+    color:  rgb(219, 205, 12);
+    font-weight: 800;
+    margin: 0;
+}
+
+.Grupo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.Grupo > input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.Grupo > label {
+    color:  rgb(219, 205, 12);
+    margin-bottom: 10px ;
+}
+
+.Grupo > placeholder{
+    color: rgb(219, 205, 12);
+}
+
+#btn-cadastro {
+    margin-left: 190px;
+    background: rgb(219, 205, 12);
+    font-family: italic;
+    border-radius: 10px; 
+}
+
+#btn-cadastro {
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    }
+    
+    #btn-cadastro:hover {
+    cursor: pointer;
+    background-color: rgb(216, 209, 105);
+}
+
+#btn-entrar:hover {
+    cursor: pointer;
+    background-color: rgb(216, 209, 105);
+}
+
+
+#btn-entrar{
+    width: 50%;
+    margin: 25px;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color:  #232321;
+    background: rgb(219, 205, 12);
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px black;
+}
+
+
+
+
+
+@media only screen and (max-width: 950px){
+    .box-login{
+        width: 85%
+    };
+}
+
+@media only screen and (max-width: 600px){
+  .tela-inicial{
+    flex-direction: column;
+  }
+  .esquerda > h1 {
+    display: none ;
+  }
+
+  .esquerda {
+    width: 100%;
+    height: auto;
+  }
+
+  .direita {
+    width: 100%;
+    height: auto;
+  }
+    
+  .img-esquerda{
+    width: 50vh;
+  }
+
+  .box-login{
+    width: 90%;
+}
+}
