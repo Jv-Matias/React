@@ -4,30 +4,43 @@ ul.menu {
     padding: 0;
     overflow: hidden;
     background-color: var(--cor-primaria);
+    
 }
+
 
 li {
     float: left;
+    width: 5%;
+    
+
 }
 
-li:first-child{
+li:first-child {
     margin-left: 25px;
+
 }
 
 li a {
     display: block;
-    color: #fff;
+    color: black;
     padding: 15px 10px;
     text-decoration: none;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 900;
+
 }
 
 li a:hover {
     background-color: var(--cor-secundaria);
+    box-shadow: 0 10px 40px black;
+    outline: auto;
+    color: #fff;
 }
 
-li:last-child{
+li:last-child {
     float: right;
+
     margin-right: 25px;
 }

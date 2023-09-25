@@ -1,0 +1,14 @@
+h4{
+    color: #fff;
+ text-align: center;
+ margin-top: 10px;
+}
+
+#btn-adicionar{
+    color: black;
+font-weight: 650;
+}
+
+#btn-adicionar:hover{
+    color: #fff;
+}

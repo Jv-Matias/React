@@ -1,4 +1,4 @@
-import './vanila.css';
+import './index.css';
 function Vanila() {
     return (
         <div>
