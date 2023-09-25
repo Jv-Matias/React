@@ -1,28 +1,45 @@
 import service from "./geral";
-import usuarioService from "./usuario";
+import serviceProduto from "./usuario";
 
 function obter(){
 
     return new Promise((resolve, reject) => {
-        service.get('/clientes')
+        service.get('/produtos')
         .then(response => resolve(response))
         .catch(erro => reject(erro))
     });
 }
 
-function adicionar(cliente){
+function adicionar(produto){
     
-    cliente.dataCadastro = new Date().toISOString();
+    produto.dataCadastro = new Date().toISOString();
 
     return new Promise((resolve, reject) => {
-        service.post('/clientes', cliente)
+        service.post('/produtos', produto)
         .then(response => resolve(response))
         .catch(erro => reject(erro))
     });
 }
 
+function atualizar(produto){
+    return new Promise((resolve, reject) => {
+        service.put(`/produtos/${produto.id}`, produto)
+        .then(response => resolve(response))
+        .catch(erro => reject(erro))
+    });
+}
+
+function excluir(id){
+    return new Promise((resolve, reject) => {
+        service.delete(`/produtos/${id}`)
+        .then(response => resolve(response))
+        .catch(erro => reject(erro))
+    });
+}
 
 export default {
     obter,
-    adicionar
+    adicionar,
+    atualizar,
+    excluir
 }

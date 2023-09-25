@@ -1,5 +1,5 @@
  import './index.css'
-function Game() {
+function Mobile() {
     return (
         <div>
             <div className="Container">
@@ -26,4 +26,4 @@ function Game() {
     )
 }
 
-export default Game;
+export default Mobile;

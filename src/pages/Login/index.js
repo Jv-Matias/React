@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2'
+// import imagemlogin from './imagem.svg';
 import './index.css'
-// import './imagem.svg'
+
+
 
 import usuarioService from '../../service/usuario';
 
@@ -39,7 +41,7 @@ function Login (){
     {/* <!-- TELA DA ESQUERDA --> */}
     <div class="esquerda">
         <h1>Faça Login  E Veja O Que Fizemos..</h1>
-        <img src={'Imagem.svg'} class="img-esquerda" alt="IMG Animada" />
+        <img src={''} class="img-esquerda" alt="IMG Animada" />
     </div>
 
 

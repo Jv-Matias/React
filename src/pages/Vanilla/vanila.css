@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background: #161623;
+} 
+
+.Video {
+    position: flex;
+    width: 900px;
+    height: 550px;
+    margin: 40px auto;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0 10px 40px -12px black;
+    align-items: center;
+    margin-left: 23%;
+}
+
+ .Conjunto > button{
+    width: 5%;
+    height: 5%;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #232321;
+    background: rgb(219, 205, 12);
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px black;
+
+}
+
+
+i{
+    margin-right: 5px;
+}

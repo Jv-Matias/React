@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Login from './pages/Login'
-import Game from './pages/Game'
+import Vanila from'./pages/Vanilla'
 import Mobile from './pages/Mobile'
 import Front from './pages/Front'
 import Home from './pages/Home'
@@ -18,7 +18,7 @@ function Router() {
           <Route path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/front" element={<Front />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/vanila" element={<Vanila />} />
           <Route path="/mobile" element={<Mobile />} />
         </Routes>
       </BrowserRouter>

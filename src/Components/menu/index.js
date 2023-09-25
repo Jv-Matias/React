@@ -1,5 +1,6 @@
 import './index.css';
 
+
 import { Link, useLocation } from 'react-router-dom';
 import usuarioService from '../../service/usuario';
 
@@ -14,7 +15,7 @@ function Menu(){
             <ul className='menu'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/front'>Front</Link></li>
-                <li><Link to='/game'>Game</Link></li>
+                <li><Link to='/vanila'>Vanila</Link></li>
                 <li><Link to='/mobile'>Mobile</Link></li>
                 <li><Link onClick={logout}>Sair</Link></li>
             </ul>
