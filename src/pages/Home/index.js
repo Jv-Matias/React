@@ -2,7 +2,7 @@ import Game from './2560x1600_px_minimalism_Pac_Man_retro_Games_video_games-6739
 import Front from './4635743.jpg'
 import Mobile from './csm_Android_6f69e7ef2a.jpg'
 import './index.css'
-
+import { FaLinkedin } from 'react-icons/fa6'
 function home() {
   return (
 
@@ -16,8 +16,7 @@ function home() {
           </button>
           {/* Linkedin */}
           <button>
-          <i className="fa-brands fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-martins-62760528b/">Figma</a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-martins-62760528b/"><FaLinkedin />Linkedin</a>
           </button>
 
 

@@ -12,3 +12,7 @@ font-weight: 650;
 #btn-adicionar:hover{
     color: #fff;
 }
+
+table.table>thead>tr th {
+    background-color: black;
+}

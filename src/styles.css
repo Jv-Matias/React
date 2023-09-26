@@ -8,6 +8,10 @@
     --cor-primaria: #FFD54F;
     --cor-secundaria: #616161;
 }
+body{
+    background: #161623;
+}
+
 
 /* CSS RESET */
 * {
@@ -33,6 +37,35 @@ button.btn{
     margin-left: 4px;
     margin-right: 4px;
 }
+
+#demo {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 40px auto;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0 10px 40px -12px black;
+}
+
+.Container > button{
+    width: 10%;
+    height: 27px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #232321;
+    background: rgb(219, 205, 12);
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px black;
+    text-decoration: none;
+}
+
+
 
 
 

@@ -6,6 +6,8 @@ import Swal from 'sweetalert2';
 // HOOKs
 import { useEffect, useState } from 'react';
 import Produto from '../../models/Front';
+import { FaPencilAlt, FaTrashAlt,} from 'react-icons/fa'
+
 
 function ProdutoPage() {
   const [produtos, setProdutos] = useState([]);
@@ -172,7 +174,7 @@ function ProdutoPage() {
         <div class="col-sm-12">
           <table class="table table-bordered table-hover table-dark table-striped">
             <thead>
-              <tr>
+              <tr className='Cabeçalho'>
                 <th>Id</th>
                 <th>Nome</th>
                 <th>Valor</th>
@@ -199,14 +201,14 @@ function ProdutoPage() {
                       data-bs-toggle="modal"
                       data-bs-target="#modal-cliente"
                     >
-                      Editar
+                    <FaPencilAlt/>  Editar
                     </button>
                     <button
                       id={produto.id}
                       onClick={excluir}
                       className="btn btn-outline-primary btn-sm espacar"
                     >
-                      Excluir
+                     <FaTrashAlt/> Excluir
                     </button>
                   </td>
                 </tr>

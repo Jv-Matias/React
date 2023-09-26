@@ -2,9 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Login from './pages/Login'
-import Vanila from'./pages/Vanilla'
-import Mobile from './pages/Mobile'
-import Front from './pages/Front'
+import Cliente from'./pages/Cliente';
+import Produtos from './pages/Produtos'
 import Home from './pages/Home'
 
 import Menu from './Components/menu/index'
@@ -17,9 +16,8 @@ function Router() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
-          <Route path="/front" element={<Front />} />
-          <Route path="/vanila" element={<Vanila />} />
-          <Route path="/mobile" element={<Mobile />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/cliente" element={<Cliente />} />
         </Routes>
       </BrowserRouter>
     );
