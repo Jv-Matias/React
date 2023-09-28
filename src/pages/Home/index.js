@@ -1,8 +1,8 @@
-import Game from './2560x1600_px_minimalism_Pac_Man_retro_Games_video_games-673928.jpg'
 import Front from './4635743.jpg'
-import Mobile from './csm_Android_6f69e7ef2a.jpg'
+import ReactImg from './react_logo_1200x640.png'
+
 import './index.css'
-import { FaLinkedin } from 'react-icons/fa6'
+import { FaLinkedin, FaGithub } from 'react-icons/fa6'
 function home() {
   return (
 
@@ -10,18 +10,18 @@ function home() {
       <div className='perfil'>
         <div className="Container">
           {/* GitHub */}
-          <button>
-            <i className="fab fa-github"></i>
-            <a href="https://github.com/Jv-Matias">GitHub</a>
+          <button id='Btn-link'>
+            <a href="https://github.com/Jv-Matias"><FaGithub/>GitHub</a>
           </button>
           {/* Linkedin */}
-          <button>
+          <button id='Btn-link'>
             <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-martins-62760528b/"><FaLinkedin />Linkedin</a>
           </button>
 
 
         </div>
       </div>
+  
 
 
 
@@ -32,7 +32,7 @@ function home() {
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          
         </div>
 
         {/* <!-- The slideshow/carousel --> */}
@@ -44,22 +44,17 @@ function home() {
               <p>Projeto...Front-End</p>
             </div>
           </div>
-          <div className="carousel-item">
-            <img src={Mobile} alt="Mobile" className="d-block w-100" />
+          <div className="carousel-item active">
+            <img src={ReactImg} alt="React" className="d-block w-100" />
             <div className="carousel-caption">
-              <h3>Mobile</h3>
-              <p>Projeto, Android-Developer</p>
+              <h3>React</h3>
+              <p>Projeto...React</p>
             </div>
           </div>
-          <div className="carousel-item">
-            <img src={Game} alt="Game-Developer"
-              className="d-block w-100" />
-            <div className="carousel-caption">
-              <h3>Game-Developer</h3>
-              <p>Projeto...Game-Developer</p>
-            </div>
           </div>
-        </div>
+          
+
+       
 
         {/* <!-- Left and right controls/icons --> */}
         <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -69,7 +64,7 @@ function home() {
           <span className="carousel-control-next-icon"></span>
         </button>
       </div>
-    </div>
+      </div>
 
   );
 

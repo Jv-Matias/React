@@ -9,6 +9,21 @@
     align-items: center;
 }
 
-button{
+a{
     text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+ }
+#Btn-link{
+    background: rgb(219, 205, 12);
+}
+#Btn-link:hover{
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 10px 40px black;
+    outline: auto;
+    color: #fff;
 }

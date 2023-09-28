@@ -11,13 +11,11 @@ ul.menu {
 li {
     float: left;
     width: 6%;
-    
-
+    align-items: center;
 }
 
 li:first-child {
     margin-left: 25px;
-    margin: 10px;
     text-align: center;
     
 }
@@ -25,13 +23,14 @@ li:first-child {
 li a {
     display: block;
     color: black;
-    padding: 7px 7px;
+    padding: 10% 5px;
     text-decoration: none;
     text-align: center;
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 900;
     width: 95px;
+    margin-top: 2%;
 
 }
 
@@ -44,6 +43,6 @@ li a:hover {
 
 li:last-child {
     float: right;
-    margin: 10px;
+
     margin-right: 25px;
 }

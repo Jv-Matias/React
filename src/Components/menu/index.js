@@ -16,8 +16,8 @@ function Menu(){
         return (
             <ul className='menu'>
                 <li><Link to='/'><FaHouse />Home</Link></li>
-                <li><Link to='/Produtos'> <FaCartShopping /> Produtos </Link></li>
-                <li><Link to='/Cliente'> <FaPersonChalkboard /> Cliente </Link></li>
+                <li><Link to='/Produtos'> <FaCartShopping /> Shop </Link></li>
+                <li><Link to='/Cliente'> <FaPersonChalkboard /> Client </Link></li>
                 <li><Link onClick={logout}><FaArrowRightToBracket /> Sair</Link></li>
             </ul>
         )

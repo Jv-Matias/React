@@ -35,8 +35,8 @@ body * {
 }
 
 .img-esquerda{
-width: 25vw;
-
+width: 30vw;
+align-items: center;
 }
 
 
@@ -120,6 +120,8 @@ width: 25vw;
     cursor: pointer;
     background-color: rgb(216, 209, 105);
 }
+
+
 
 
 #btn-entrar{
