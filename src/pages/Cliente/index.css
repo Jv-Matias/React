@@ -1,5 +1,5 @@
 h4{
-    color: #fff;
+
  text-align: center;
  margin-top: 10px;
 }
@@ -12,3 +12,4 @@ font-weight: 650;
 #btn-adicionarCliente:hover{
     color: #fff;
 }
+h4{color: #000;}

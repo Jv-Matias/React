@@ -26,6 +26,13 @@ function ClientePage() {
 
   }, []);
 
+  const fecharModal = () => {
+    const modal = document.getElementById('modal-cliente');
+    if (modal) {
+      document.getElementById('btn-cancelar').click();
+    }
+  };
+
   const editarCliente = (e) => {
     setModoEdicao(true);
     let clienteEncontrado = clientes.find(c => c.id == e.target.id);
@@ -67,8 +74,9 @@ function ClientePage() {
       });
       return;
     }
-
+   
     (modoEdicao) ? atualizarClienteBackend(cliente) : adicionarClienteBackend(cliente);
+fecharModal() 
   };
 
   const adicionarClienteBackend = (cliente) => {
@@ -152,7 +160,7 @@ function ClientePage() {
       {/* <!-- Titulo --> */}
       <div className="row mt-3">
         <div className="col-sm-12">
-          <h4>Clientes</h4>
+          <h3>Clientes</h3>
           <hr />
         </div>
       </div>
@@ -230,7 +238,7 @@ function ClientePage() {
 
               {/* <!-- Modal Header --> */}
               <div className="modal-header">
-                <h4 className="modal-title">{modoEdicao ? "Editar cliente" : "adicionarCliente cliente"}</h4>
+                <h4 className="modal-title">{modoEdicao ? "Editar cliente" : "Adicionar Cliente"}</h4>
                 <button
                   type="button"
                   className="btn-close"

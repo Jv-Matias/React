@@ -24,6 +24,12 @@ function ProdutoPage() {
       });
   }, []);
 
+  const fecharModal = () => {
+    const modal = document.getElementById('modal-cliente');
+    if (modal) {
+      document.getElementById('btn-cancelar').click();
+    }
+  };
   const editar = (e) => {
     setModoEdicao(true);
     let produtoEncontrado = produtos.find(c => c.id == e.target.id);
@@ -72,6 +78,8 @@ function ProdutoPage() {
 
     if (modoEdicao) {
       atualizarProdutoBackend(produto);
+   
+      fecharModal();
     } else {
       adicionarProdutoBackend(produto);
     }
@@ -150,7 +158,7 @@ function ProdutoPage() {
       {/* Titulo */}
       <div className="row mt-3">
         <div className="col-sm-12">
-          <h4>Produtos</h4>
+          <h3>Produtos</h3>
           <hr />
         </div>
       </div>
@@ -309,7 +317,7 @@ function ProdutoPage() {
               </div>
               {/* Modal footer */}
               <div className="modal-footer">
-                <button id="btn-salvar" className="btn btn-primary btn-sm" onClick={salvar} >Salvar</button>
+                <button id="btn-salvar" className="btn btn-primary btn-sm" onClick={salvar}>Salvar</button>
                 <button id="btn-cancelar" className="btn btn-light btn-sm" data-bs-dismiss="modal">Cancelar</button>
               </div>
             </div>
